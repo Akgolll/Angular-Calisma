@@ -8,6 +8,9 @@ cmd açıp projenin içindeki db.json konumuna locate olmak gerek. <br>
 Daha sonra <br>
 <b>json-server --watch db.json </b> <br>
 yazıp çalıştırmalısınız. <br>
+<br><br><br>
+Merak edenler için Json-server repository;
+<a href="https://github.com/typicode/json-server" _blank>
 
 cmd açık olduğu sürece ürünleri sayfada görebilirsiniz.
 
