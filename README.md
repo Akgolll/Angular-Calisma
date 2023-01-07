@@ -11,6 +11,6 @@ yazıp çalıştırmalısınız. <br>
 
 cmd açık olduğu sürece ürünleri sayfada görebilirsiniz.
 
-Giriş bilgileri:
-admin
-123
+Login bilgileri: <br>
+<b>admin </b>
+<b>123 </b>
