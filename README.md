@@ -10,3 +10,7 @@ Daha sonra <br>
 yazıp çalıştırmalısınız. <br>
 
 cmd açık olduğu sürece ürünleri sayfada görebilirsiniz.
+
+Giriş bilgileri:
+admin
+123
