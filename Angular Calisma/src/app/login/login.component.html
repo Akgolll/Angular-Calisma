@@ -1,0 +1,24 @@
+<div class="container pt-3">
+     <div class="row">
+          <div class="col-2"></div>
+          <div class="col-8">
+               <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+                    <h1 class="h3 mb-3 fw-normal text-center">Sisteme Giriş</h1>
+                
+                    <div class="form-floating">
+                      <input type="text" #userName="ngModel" [(ngModel)]="model.userName" class="form-control" id="userName" name="userName" placeholder="Kullanıcı Adı">
+                      <label for="floatingInput">Kullanıcı Adı</label>
+                    </div>
+
+                    <div class="form-floating mt-3">
+                      <input #password="ngModel" [(ngModel)]="model.password" type="password" class="form-control" name="password" id="password" placeholder="Şifre">
+                      <label for="floatingPassword">Password</label>
+                    </div>
+                    <button class="w-100 btn btn-lg btn-primary mt-3" type="submit" >Giriş Yap</button>
+                    
+                    <p class="mt-5 mb-3 text-muted text-center">&copy; 2017–2022</p>
+                  </form>
+          </div>
+          <div class="col-2"></div>
+     </div>
+</div>

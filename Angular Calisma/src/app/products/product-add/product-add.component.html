@@ -1,0 +1,43 @@
+<h2 class="h2 p-1">Yeni Ürün Ekle</h2>
+
+<form #productAddForm="ngForm" (ngSubmit)="add(productAddForm)">
+     <div class="form-group mt     -3">
+          <input type="text" placeholder="Ürün Adı" #name="ngModel" [(ngModel)]="model.name" class="form-control"
+               name="name" id="name" required>
+          <div *ngIf="name.invalid && name.dirty" class="alert alert-danger pt-1">
+               <p>Ürün İsmi Gereklidir.</p>
+          </div>
+     </div>
+
+     <div class="form-group mt-3">
+          <input type="text" placeholder="Ürün Açıklaması" #description="ngModel" [(ngModel)]="model.description"
+               class="form-control" name="description" id="description" required>
+          <div *ngIf="description.invalid && description.dirty" class="alert alert-danger pt-1">
+               <p>Ürün Açıklaması Gereklidir.</p>
+          </div>
+     </div>
+
+     <div class="form-group mt-3">
+          <input type="text" placeholder="Ürün Fotoğrafı" #imageUrl="ngModel" [(ngModel)]="model.imageUrl"
+               class="form-control" name="imageUrl" id="imageUrl" required>
+          <div *ngIf="imageUrl.invalid && imageUrl.dirty" class="alert alert-danger pt-1">
+               <p>Fotoğraf Gereklidir.</p>
+          </div>
+     </div>
+
+     <div class="form-group mt-3">
+          <input type="text" placeholder="Ürün Fiyatı" #price="ngModel" [(ngModel)]="model.price" class="form-control"
+               name="price" id="price" required>
+          <div *ngIf="price.invalid && price.dirty" class="alert alert-danger pt-2">
+               <p>Fiyat Gereklidir.</p>
+          </div>
+     </div>
+
+     <div class="form-group mt-3">
+          <select class="form-select" #categoryId="ngModel" [(ngModel)]="model.categoryId" required id="categoryId" name="categoryId">
+               <option *ngFor="let category of categories" [value]="category.id">{{category.name}}</option>
+          </select>
+     </div>
+
+     <button type="submit" class="btn btn-success mt-3" [disabled]="productAddForm.invalid">Kaydet</button>
+</form>
