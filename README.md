@@ -10,7 +10,7 @@ Daha sonra <br>
 yazıp çalıştırmalısınız. <br>
 <br><br><br>
 Merak edenler için Json-server repository;
-<a href="https://github.com/typicode/json-server" _blank>
+<a href="https://github.com/typicode/json-server" _blank>Buradan ulaşabilirsiniz.</a>
 
 cmd açık olduğu sürece ürünleri sayfada görebilirsiniz.
 
